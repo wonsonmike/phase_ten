@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 121b: Week 06 | Phase 10</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lesson 2</a></li>
+            <li><a href="#">Lesson 3</a></li>
+            <li><a href="#">Lesson 4</a></li>
+            <li><a href="#">Lesson 5</a></li>
+            <li><a href="#" class="active">Lesson 6</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Phase 10 Scorecard</h1>
+        <p id="winner"></p>
+        <button id="newGame">New Game</button>
+        <hr>
+    </header>
+    <main id="players">
+        <ul>
+            <li id="player1">
+                <label for="name1">Name:</label>
+                <input type="text" id="name1" name="name1">
+                <p>Points: <span id="points1"></span></p>
+                <p>Phase: <span id="phase1"></span></p>
+                <hr>
+                <label for="newPoints1">Points this round:</label>
+                <input type="text" id="newPoints1" name="newPoints1">
+                <label for="didPhase1">Did you phase?</label>
+                <input type="checkbox" id="didPhase1" name="didPhase1">
+                <hr>
+            </li>
+            <li id="player2">
+                <label for="name2">Name:</label>
+                <input type="text" id="name2" name="name2">
+                <p>Points: <span id="points2"></span></p>
+                <p>Phase: <span id="phase2"></span></p>
+                <hr>
+                <label for="newPoints2">Points this round:</label>
+                <input type="text" id="newPoints2" name="newPoints2">
+                <label for="didPhase2">Did you phase?</label>
+                <input type="checkbox" id="didPhase2" name="didPhase2">
+                <hr>
+            </li>
+            <li id="player3">
+                <label for="name3">Name:</label>
+                <input type="text" id="name3" name="name3">
+                <p>Points: <span id="points3"></span></p>
+                <p>Phase: <span id="phase3"></span></p>
+                <hr>
+                <label for="newPoint3">Points this round:</label>
+                <input type="text" id="newPoints3" name="newPoints3">
+                <label for="didPhase3">Did you phase?</label>
+                <input type="checkbox" id="didPhase3" name="didPhase3">
+                <hr>
+            </li>
+            <li id="player4">
+                <label for="name4">Name:</label>
+                <input type="text" id="name4" name="name4">
+                <p>Points: <span id="points4"></span></p>
+                <p>Phase: <span id="phase4"></span></p>
+                <hr>
+                <label for="newPoints4">Points this round:</label>
+                <input type="text" id="newPoints4" name="newPoints4">
+                <label for="didPhase4">Did you phase?</label>
+                <input type="checkbox" id="didPhase4" name="didPhase4">
+                <hr>
+            </li>
+        </ul>
+        <button id="send">Populate points</button>
+        <h2>Phases</h2>
+        <ul>
+            <li style="color:green">Phase 1:<br>2 sets of 3</li>
+            <li style="color:red">Phase 2:<br>1 set of 3 + 1 run of 4</li>
+            <li style="color:green">Phase 3:<br>1 set of 4 + 1 run of 4</li>
+            <li style="color:red">Phase 4:<br>1 run of 7</li>
+            <li style="color:green">Phase 5:<br>1 run of 8</li>
+        </ul>
+        <ul style="margin-top: 3%; margin-bottom: 3%;">
+            <li style="color:red">Phase 6:<br>1 run of 9</li>
+            <li style="color:green">Phase 7:<br>2 sets of 4</li>
+            <li style="color:red">Phase 8:<br>7 cards of one color</li>
+            <li style="color:green">Phase 9:<br>1 set of 5 + 1 set of 2</li>
+            <li style="color:red">Phase 10:<br>1 set of 5 + 1 set of 3</li>
+        </ul>
+    </main>
+    <footer>
+        &copy;<span>2022</span> | Phase 10 Scorecard | Lesson 6
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
